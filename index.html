@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Братья-цыплята</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="image/петуф.png" type="image/png">
+</head>
+
+<body>
+
+
+    <header>
+        <div class="header-block container">
+            <a href="#" class="logo">
+                <img src="image/лого.svg" alt="Логотип Братья-цыплята">
+            </a>
+            <nav>
+                <a href="#menu">Меню</a>
+                <a href="#directions">Направления</a>
+                <a href="#gallery">Отзывы</a>
+            </nav>
+            <a href="tel:+78005553535" class="phone">+7 (800) 555-35-35</a>
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- Блок 1: Первый экран -->
+        <section class="hero">
+            <div class="hero-block container">
+                <div class="hero-text">
+                    <span>Братья знают толк</span>
+                    <h1>Сочная шаурма<br>только у нас</h1>
+                    <p>Готовим за 10 минут из свежих продуктов. Мясо халяль, кейтеринг для праздников и офисов от 10 человек.</p>
+                    <a href="#feedback" class="btn">Оставить заявку</a>
+                    <div class="hero-stats">
+                        <div>
+                            <strong>10 мин</strong>
+                            <span>на заказ</span>
+                        </div>
+                        <div>
+                            <strong>100%</strong>
+                            <span>халяль</span>
+                        </div>
+                        <div>
+                            <strong>10–23</strong>
+                            <span>ежедневно</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Блок 2: Слайдер акций -->
+        <section class="promo">
+            <div class="promo-slider">
+                <button type="button" class="arrow-left" onclick="movePromo(-1)">‹</button>
+
+
+
+                <div class="promo-vce">
+                    <div class="promo-reklama">
+                        <img src="image/реклама.png" alt="">
+                    </div>
+                    <div class="promo-reklama">
+                        <img src="image/реклама.png" alt="">
+                    </div>
+                    <div class="promo-reklama">
+                        <img src="image/реклама.png" alt="">
+                    </div>
+                    <div class="promo-reklama">
+                        <img src="image/реклама.png" alt="">
+                    </div>
+                    <div class="promo-reklama">
+                        <img src="image/реклама.png" alt="">
+                    </div>
+                    <div class="promo-reklama">
+                        <img src="image/реклама.png" alt="">
+                    </div>
+                </div>
+
+
+
+                <button type="button" class="arrow-right" onclick="movePromo(1)">›</button>
+            </div>
+
+
+
+            <div class="promo-dots">
+                <span class="active" onclick="setPromo(0)"></span>
+                <span onclick="setPromo(1)"></span>
+                <span onclick="setPromo(2)"></span>
+                <span onclick="setPromo(3)"></span>
+            </div>
+
+
+        
+
+        </section>
+
+        <!-- Блок 3: Наше меню -->
+        <section id="menu" class="menu container">
+            <div class="title">
+                <h2>НАШЕ МЕНЮ</h2>
+            </div>
+
+
+
+            <div class="menu-tabs">
+                <button type="button" class="active" onclick="changeMenu(0)">Шаурма</button>
+                <button type="button" onclick="changeMenu(1)">Закуски</button>
+                <button type="button" onclick="changeMenu(2)">Салаты</button>
+                <span class="tab-line"></span>
+            </div>
+
+
+
+            <div class="cards-block">
+
+
+                <div class="card">
+                    <img src="image/шаверма-1.png" alt="">
+                    <div class="denga">
+                        <b>418,50 ₽</b>
+                        <s>465</s>
+                    </div>
+                    <h3>Ливанская</h3>
+                    <p>600 г</p>
+                </div>
+
+                <div class="card">
+                    <img src="image/шаверма-1.png" alt="">
+                    <div class="denga">
+                        <b>418,50 ₽</b>
+                    </div>
+                    <h3>Ливанская</h3>
+                    <p>600 г</p>
+                </div>
+
+                <div class="card">
+                    <img src="image/шаверма-1.png" alt="">
+                    <div class="denga">
+                        <b>418,50 ₽</b>
+                    </div>
+                    <h3>Ливанская</h3>
+                    <p>600 г</p>
+                </div>
+
+                <div class="card">
+                    <img src="image/шаверма-1.png" alt="">
+                    <div class="denga">
+                        <b>418,50 ₽</b>
+                    </div>
+                    <h3>Ливанская</h3>
+                    <p>600 г</p>
+                </div>
+
+                <div class="card">
+                    <img src="image/шаверма-1.png" alt="">
+                    <div class="denga">
+                        <b>418,50 ₽</b>
+                        <s>465</s>
+                    </div>
+                    <h3>Ливанская</h3>
+                    <p>600 г</p>
+                </div>
+
+                <div class="card">
+                    <img src="image/шаверма-1.png" alt="">
+                    <div class="denga">
+                        <b>418,50 ₽</b>
+                    </div>
+                    <h3>Ливанская</h3>
+                    <p>600 г</p>
+                </div>
+
+                <div class="card">
+                    <img src="image/шаверма-1.png" alt="">
+                    <div class="denga">
+                        <b>418,50 ₽</b>
+                    </div>
+                    <h3>Ливанская</h3>
+                    <p>600 г</p>
+                </div>
+
+                <div class="card">
+                    <img src="image/шаверма-1.png" alt="">
+                    <div class="denga">
+                        <b>418,50 ₽</b>
+                    </div>
+                    <h3>Ливанская</h3>
+                    <p>600 г</p>
+                </div>
+
+
+            </div>
+
+            <div class="menu-prilozenie">
+                <a href="#app">Заказать можете в нашем приложений →</a>
+            </div>
+        </section>
+
+        <!-- Блок 4: Направления -->
+        <section id="directions" class="napravlenie">
+            <div class="container">
+                <div class="title">
+                    <h2>Направления</h2>
+                    <p>Выберите формат: шаурма на месте, закуски к ней или кейтеринг на мероприятие.</p>
+                </div>
+
+                <div class="napravlenie-block">
+
+
+                    <div class="napravlenie-card">
+                        <div>
+                            <h3>Шаурма</h3>
+                            <h4>от <span>220 ₽</span></h4>
+                            <p>- Курица, говядина или креветки<br>- Свежие овощи и фирменные соус.</p>
+                        </div>
+                        <a href="#feedback" class="btn">Оставить заявку</a>
+                    </div>
+
+                    <div class="napravlenie-card">
+                        <div>
+                            <h3>Закуски</h3>
+                            <h4>от <span>90 ₽</span></h4>
+                            <p>- Картофель фри<br>- Наггетсы и сырные палочки<br>- Соусы на выбор<br>- К любой шаурме</p>
+                        </div>
+                        <a href="#feedback" class="btn">Оставить заявку</a>
+                    </div>
+
+                    <div class="napravlenie-card">
+                        <div>
+                            <h3>Кейтеринг</h3>
+                            <h4>от <span>3 000 ₽</span></h4>
+                            <p>- Заказ от 10 человек<br>- Доставка и сервировка<br>- Меню под бюджет<br>- Заказ за 2 дня</p>
+                        </div>
+                        <a href="#feedback" class="btn">Оставить заявку</a>
+                    </div>
+
+                    <div class="napravlenie-card">
+                        <div>
+                            <h3>Салаты</h3>
+                            <h4>от <span>300 ₽</span></h4>
+                            <p>- Заказ от 10 человек<br>- Доставка и сервировка<br>- Меню под бюджет<br>- Заказ за 2 дня</p>
+                        </div>
+                        <a href="#feedback" class="btn">Оставить заявку</a>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Блок 5: Мобильное приложение -->
+        <section id="app" class="app">
+            <div class="app-block container">
+                <span class="percent p1">%</span>
+                <span class="percent p2">%</span>
+                <span class="percent p3">%</span>
+                <span class="percent p4">%</span>
+
+                <div class="app-banner">
+                    <div class="app-text">
+                        <h2>У нас есть<br><span>мобильное<br>приложение!</span></h2>
+                        <p>Доступно для IOS и ANDROID</p>
+                        <div class="app-buttons">
+                            <a href="#">Google Play</a>
+                            <a href="#">App Store</a>
+                        </div>
+                    </div>
+                    <div class="app-img">
+                        <img src="image/шаурма-телефон.png" alt="приложение">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Блок 6: Вопросы и ответы -->
+        <section id="faq" class="big-bymba">
+            <div class="big-bymba-block container">
+                <div class="big-bymba-left">
+                    <h2>Вопросы и ответы</h2>
+                    <p>Не нашли ответ? Оставьте заявку, и мы перезвоним.</p>
+                    <a href="#feedback" class="btn">Задать вопрос</a>
+                </div>
+
+                <div class="big-bymba-right">
+                    <div class="big-bymba-item open" onclick="toggleFaq(this)">
+                        <div class="big-bymba-head">
+                            <h3>Мясо у вас халяль?</h3>
+                            <span>⌄</span>
+                        </div>
+                        <p>Да, всё мясо халяль, сертификаты есть в шаурмечной.</p>
+                    </div>
+
+                    <div class="big-bymba-item" onclick="toggleFaq(this)">
+                        <div class="big-bymba-head">
+                            <h3>Сколько ждать заказ?</h3>
+                            <span>⌄</span>
+                        </div>
+                        <p>Готовим за 10 минут из свежих продуктов прямо при вас.</p>
+                    </div>
+
+                    <div class="big-bymba-item" onclick="toggleFaq(this)">
+                        <div class="big-bymba-head">
+                            <h3>Есть ли доставка?</h3>
+                            <span>⌄</span>
+                        </div>
+                        <p>Да, доставляем горячую шаурму и закуски по всей Казани через наше приложение.</p>
+                    </div>
+
+                    <div class="big-bymba-item" onclick="toggleFaq(this)">
+                        <div class="big-bymba-head">
+                            <h3>Можно заказать на мероприятие?</h3>
+                            <span>⌄</span>
+                        </div>
+                        <p>Да, организуем кейтеринг для праздников и офисов от 10 человек с доставкой и сервировкой.</p>
+                    </div>
+
+                    <div class="big-bymba-item" onclick="toggleFaq(this)">
+                        <div class="big-bymba-head">
+                            <h3>Как оставить заявку?</h3>
+                            <span>⌄</span>
+                        </div>
+                        <p>Заполните форму ниже на сайте, и мы перезвоним вам в течение нескольких минут.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Блок 7: Галерея -->
+        <section id="gallery" class="gallery">
+            <div class="container">
+                <div class="title">
+                    <h2>ГАЛЕРЕЯ</h2>
+                    <p>Еда, гости и заведение вживую. Листайте вправо.</p>
+                </div>
+
+                <div class="gallery-slider">
+                    <button type="button" class="arrow-left" onclick="moveGallery(-1)">‹</button>
+
+
+                    <div class="gallery-window">
+                        <div class="gallery-track">
+                            <img src="image/Фото-гости.png" onerror="this.src='image/Group-65.png'" alt="" class="big" onclick="setGallery(0)">
+                            <img src="image/Group-65.png" alt="" onclick="setGallery(1)">
+                            <img src="image/Фото-тост.png" onerror="this.src='image/Group-65.png'" alt="" onclick="setGallery(2)">
+                            <img src="image/Фото-гости.png" onerror="this.src='image/Group-65.png'" alt="" onclick="setGallery(3)">
+                            <img src="image/Group-65.png" alt="" onclick="setGallery(0)">
+                            <img src="image/Фото-тост.png" onerror="this.src='image/Group-65.png'" alt="" onclick="setGallery(1)">
+                        </div>
+                    </div>
+
+
+                    <button type="button" class="arrow-right" onclick="moveGallery(1)">›</button>
+                </div>
+
+                <div class="gallery-dots">
+                    <span class="active" onclick="setGallery(0)"></span>
+                    <span onclick="setGallery(1)"></span>
+                    <span onclick="setGallery(2)"></span>
+                    <span onclick="setGallery(3)"></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Блок 8: Форма обратной связи -->
+        <section id="feedback" class="feedback">
+            <div class="feedback-block container">
+                <div class="feedback-left">
+                    <h2>Напишите нам , и мы перезвоним</h2>
+                    <p>Расскажите, что хотите заказать: шаурму на каждый день или кейтеринг на праздник.</p>
+                </div>
+
+
+
+                <div class="feedback-right">
+                    <form action="#">
+                        <div class="field">
+                            <label>Имя</label>
+                            <input type="text" name="name" placeholder="Иван" required>
+                        </div>
+
+                        <div class="field">
+                            <label>Телефон</label>
+                            <input type="tel" name="phone" placeholder="+7 (9)" required>
+                        </div>
+
+                        <div class="field">
+                            <input type="email" name="email" placeholder="Email@.com" required>
+                        </div>
+
+                        <label class="check">
+                            <input type="checkbox" name="policy" required>
+                            <span>Я согласен(на) на <a href="#">обработку персональных данных</a></span>
+                        </label>
+
+                        <button type="submit" class="btn">Оставить заявку</button>
+                    </form>
+                </div>
+
+
+
+
+            </div>
+        </section>
+
+    </main>
+    
+
+    <!-- Блок 9: Подвал -->
+    <footer>
+        <div class="footer-block container">
+            <div class="footer-logo">
+                <a href="#" class="logo">
+                    <img src="image/Group.png" alt="">
+                    <span>Братья-цыплята</span>
+                </a>
+                <p>Братья знают толк. Свежая шаурма в Казани.</p>
+                <div class="footer-img">
+                    <a href="https://t.me/Mitkit0"><img src="image/social-telegram.png" alt=""></a>
+                    <a href="image/стендоффчик.jpg"><img src="image/social-vk.png" alt=""></a>
+                    <a href="https://yandex.ru/video/preview/5358267471053482284"><img src="image/social-whatsapp.png" alt=""></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Меню</h3>
+                <a href="#menu">О нас</a>
+                <a href="#directions">Направления</a>
+                <a href="#gallery">Галерея</a>
+                <a href="#gallery">Отзывы</a>
+                <a href="#faq">Вопросы</a>
+            </div>
+
+            <div class="footer-col">
+                <h3>Контакты</h3>
+                <p>Казань, ул. Барии галеева 3а</p>
+                <a href="mailto:info@bratya-cyplyata.ru">info@bratya-cyplyata.ru</a>
+                <a href="tel:+78005553535">+7 (800) 555-35-35</a>
+            </div>
+
+            <div class="footer-col">
+                <h3>Документы</h3>
+                <a href="#">Политика конфиденциальности</a>
+                <a href="#">Согласие на обработку данных</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom container">
+            <p>© Братья-цыплята, 2026.</p>
+        </div>
+    </footer>
+
+    <script>
+        /* 1. Слайдер акций */
+        let promoIndex = 0;
+
+        function updatePromo() {
+            const track = document.querySelector('.promo-vce');
+            const dots = document.querySelectorAll('.promo-dots span');
+            const offset = (promoIndex - 1) * -810;
+            track.style.transform = 'translateX(' + offset + 'px)';
+
+            for (let i = 0; i < dots.length; i++) {
+                dots[i].classList.remove('active');
+            }
+            dots[promoIndex].classList.add('active');
+        }
+
+        function movePromo(step) {
+            promoIndex = promoIndex + step;
+            if (promoIndex > 3) {
+                promoIndex = 0;
+            }
+            if (promoIndex < 0) {
+                promoIndex = 3;
+            }
+            updatePromo();
+        }
+
+        function setPromo(index) {
+            promoIndex = index;
+            updatePromo();
+        }
+
+        /* 2. Переключение вкладок меню */
+        const menuData = [
+            { name: 'Ливанская', price: '418,50 ₽', weight: '600 г' },
+            { name: 'Сырные палочки', price: '190,00 ₽', weight: '250 г' },
+            { name: 'Цезарь с курицей', price: '320,00 ₽', weight: '350 г' }
+        ];
+
+        function changeMenu(index) {
+            const tabs = document.querySelectorAll('.menu-tabs button');
+            const line = document.querySelector('.tab-line');
+            const names = document.querySelectorAll('.card h3');
+            const prices = document.querySelectorAll('.price b');
+            const weights = document.querySelectorAll('.card p');
+
+            for (let i = 0; i < tabs.length; i++) {
+                tabs[i].classList.remove('active');
+            }
+            tabs[index].classList.add('active');
+            line.style.left = (index * 33.333) + '%';
+
+            for (let i = 0; i < names.length; i++) {
+                names[i].textContent = menuData[index].name;
+                prices[i].textContent = menuData[index].price;
+                weights[i].textContent = menuData[index].weight;
+            }
+        }
+
+        /* 3. Раскрытие вопросов FAQ */
+        function toggleFaq(item) {
+            item.classList.toggle('open');
+        }
+
+        /* 4. Слайдер галереи */
+        let galleryIndex = 0;
+
+        function updateGallery() {
+            const track = document.querySelector('.gallery-track');
+            const photos = document.querySelectorAll('.gallery-track img');
+            const dots = document.querySelectorAll('.gallery-dots span');
+
+            const offset = galleryIndex * -340;
+            track.style.transform = 'translateX(' + offset + 'px)';
+
+            for (let i = 0; i < photos.length; i++) {
+                photos[i].classList.remove('big');
+            }
+            photos[galleryIndex].classList.add('big');
+
+            for (let i = 0; i < dots.length; i++) {
+                dots[i].classList.remove('active');
+            }
+            dots[galleryIndex].classList.add('active');
+        }
+
+        function moveGallery(step) {
+            galleryIndex = galleryIndex + step;
+            if (galleryIndex > 3) {
+                galleryIndex = 0;
+            }
+            if (galleryIndex < 0) {
+                galleryIndex = 3;
+            }
+            updateGallery();
+        }
+
+        function setGallery(index) {
+            galleryIndex = index;
+            updateGallery();
+        }
+    </script>
+
+</body>
+
+</html>

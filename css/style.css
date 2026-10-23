@@ -1,0 +1,821 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: 0.5s;
+    font-family: 'Montserrat-Regular';
+}
+
+h1 {
+    font-family: "Oswald";
+}
+
+@font-face {
+    font-family: "Montserrat-Regular";
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family:"Oswald" ;
+    src: url(../fonts/Oswald.ttf);
+}
+
+body {
+    background-color: #FDF6E2;
+    color: #1E2738;
+}
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #C42B2B;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #A01F1F;
+    transform: translateY(-10px);
+}
+
+.title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.title p {
+    font-size: 15px;
+    color: #555555;
+    margin-bottom: 36px;
+}
+
+/* Шапка */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: #F6BD00;
+    z-index: 100;
+}
+
+.header-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.logo img {
+    height: 42px;
+    display: block;
+}
+
+nav {
+    display: flex;
+    gap: 32px;
+}
+
+nav a {
+    font-size: 14px;
+    color: #1E2738;
+}
+
+nav a:hover {
+    color: #C42B2B;
+    transform: translateY(-3px);
+}
+
+.phone {
+    font-size: 15px;
+    font-weight: bold;
+    color: #1E2738;
+}
+
+.phone:hover {
+    color: #C42B2B;
+}
+
+/* Блок 1: Первый экран */
+main {
+    padding-top: 70px;
+}
+
+.hero {
+    height: 620px;
+    background-color: #231F20;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.78) 0%, rgba(0, 0, 0, 0.35) 100%), url('../image/шаурмистер.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-block {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.hero-text {
+    width: 520px;
+    color: white;
+}
+
+.hero-text span {
+    font-size: 16px;
+    color: #E0E0E0;
+}
+
+.hero-text h1 {
+    font-size: 52px;
+    line-height: 58px;
+    margin: 16px 0 20px 0;
+}
+
+.hero-text p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #E0E0E0;
+    margin-bottom: 32px;
+}
+
+.hero-text .btn {
+    width: 190px;
+    height: 46px;
+    margin-bottom: 42px;
+}
+
+.hero-stats {
+    display: flex;
+    gap: 48px;
+}
+
+.hero-stats div {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-stats strong {
+    font-size: 28px;
+}
+
+.hero-stats span {
+    font-size: 13px;
+    color: #CCCCCC;
+}
+
+/* Блок 2: Слайдер акций */
+.promo {
+    padding: 70px 0 40px;
+    overflow: hidden;
+}
+
+.promo-slider {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.promo-vce {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    transform: translateX(810px);
+}
+
+.promo-reklama {
+    width: 780px;
+    height: 452px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.promo-reklama img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.arrow-left,
+.arrow-right {
+    position: absolute;
+    top: 42%;
+    background: transparent;
+    border: none;
+    color: #F6BD00;
+    font-size: 64px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.arrow-left:hover,
+.arrow-right:hover {
+    transform: translateY(-10px);
+}
+
+.arrow-left {
+    left: 40px;
+}
+
+.arrow-right {
+    right: 40px;
+}
+
+.promo-dots,
+.gallery-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 24px;
+}
+
+.promo-dots span,
+.gallery-dots span {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #F3DF9D;
+    cursor: pointer;
+}
+
+.promo-dots .active,
+.gallery-dots .active {
+    background-color: #F6BD00;
+}
+
+/* Блок 3: Наше меню */
+.menu {
+    padding: 50px 0 70px;
+}
+
+.menu .title h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.menu-tabs {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #E5DEC9;
+    margin-bottom: 45px;
+}
+
+.menu-tabs button {
+    flex: 1;
+    padding-bottom: 14px;
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    color: #1E2738;
+    cursor: pointer;
+}
+
+.menu-tabs .active {
+    font-weight: bold;
+}
+
+.tab-line {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 33.333%;
+    height: 4px;
+    background-color: #F6BD00;
+}
+
+.cards-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 45px;
+}
+
+.card {
+    width: 265px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.card img {
+    width: 230px;
+    height: 230px;
+    object-fit: contain;
+    margin-bottom: 14px;
+}
+
+.card img:hover {
+    transform: translateY(-15px);
+}
+
+.denga {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 4px;
+}
+
+.denga b {
+    font-size: 16px;
+    color: #D94E28;
+}
+
+.denga s {
+    font-size: 14px;
+    color: #888888;
+    text-decoration: line-through;
+}
+
+.card h3 {
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 2px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #777777;
+}
+
+.menu-prilozenie {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 50px;
+}
+
+.menu-prilozenie a {
+    font-size: 16px;
+    color: #4A4A4A;
+}
+
+.menu-prilozenie a:hover {
+    color: #C42B2B;
+    transform: translateY(-5px);
+}
+
+/* Блок 4: Направления */
+.napravlenie {
+    background-color: #F6BD00;
+    padding: 70px 0;
+}
+
+.napravlenie .title p {
+    width: 420px;
+    color: #333333;
+}
+
+.napravlenie-block {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.napravlenie-card {
+    width: 277px;
+    min-height: 260px;
+    background-color: #FDF6E2;
+    border-radius: 12px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.napravlenie-card:hover {
+    transform: translateY(-10px);
+}
+
+.napravlenie-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.napravlenie-card h4 {
+    font-size: 18px;
+    margin-bottom: 14px;
+}
+
+.napravlenie-card span {
+    color: #C42B2B;
+}
+
+.napravlenie-card p {
+    font-size: 13px;
+    line-height: 19px;
+    color: #555555;
+    margin-bottom: 20px;
+}
+
+.napravlenie-card .btn {
+    width: 100%;
+    height: 40px;
+    font-size: 14px;
+}
+
+/* Блок 5: Мобильное приложение */
+.app {
+    background-color: #F6BD00;
+    padding: 80px 0 120px;
+    position: relative;
+    overflow: hidden;
+}
+
+.app-block {
+    position: relative;
+}
+
+.percent {
+    position: absolute;
+    font-size: 96px;
+    font-weight: bold;
+    color: #FDF6E2;
+    opacity: 0.35;
+}
+
+.p1 {
+    top: -65px;
+    left: -110px;
+}
+
+.p2 {
+    bottom: -65px;
+    left: -60px;
+}
+
+.p3 {
+    top: -70px;
+    right: 220px;
+}
+
+.p4 {
+    bottom: -75px;
+    right: 80px;
+}
+
+.app-banner {
+    background-color: #FDF6E2;
+    border-radius: 16px;
+    height: 290px;
+    padding: 40px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.app-text {
+    width: 340px;
+}
+
+.app-text h2 {
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 14px;
+}
+
+.app-text span {
+    color: #F6BD00;
+}
+
+.app-text p {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.app-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.app-buttons a {
+    background-color: black;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 10px 18px;
+    border-radius: 6px;
+}
+
+.app-buttons a:hover {
+    transform: translateY(-10px);
+}
+
+.app-img {
+    position: absolute;
+    right: 120px;
+    top: -55px;
+    width: 320px;
+}
+
+.app-img:hover {
+    transform: translateY(-10px);
+}
+
+.app-img img {
+    width: 100%;
+}
+
+/* Блок 6: Вопросы и ответы */
+.big-bymba {
+    padding: 90px 0;
+    background-color: #FAF6F0;
+    background: url('../image/патерн.png');
+    background-size: 650px;
+}
+
+.big-bymba-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.big-bymba-left {
+    width: 360px;
+}
+
+.big-bymba-left h2 {
+    font-size: 32px;
+    margin-bottom: 14px;
+}
+
+.big-bymba-left p {
+    font-size: 15px;
+    line-height: 22px;
+    color: #555555;
+    margin-bottom: 24px;
+}
+
+.big-bymba-left .btn {
+    width: 180px;
+    height: 44px;
+}
+
+.big-bymba-right {
+    width: 650px;
+}
+
+.big-bymba-item {
+    border-bottom: 1px solid #F6BD00;
+    padding: 18px 0;
+    cursor: pointer;
+}
+
+.big-bymba-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.big-bymba-head h3 {
+    font-size: 16px;
+}
+
+.big-bymba span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.big-bymba-item.open span {
+    transform: rotate(180deg);
+}
+
+.big-bymba-item p {
+    display: none;
+    font-size: 14px;
+    color: #555555;
+    margin-top: 10px;
+}
+
+.big-bymba-item.open p {
+    display: block;
+}
+
+/* Блок 7: Галерея */
+.gallery {
+    padding: 70px 0;
+    overflow: hidden;
+}
+
+.gallery-slider {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.gallery-window {
+    width: 1180px;
+    overflow: hidden;
+    padding: 12px 0;
+}
+
+.gallery-track {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.gallery-track img {
+    width: 316px;
+    height: 290px;
+    flex-shrink: 0;
+    object-fit: cover;
+    border-radius: 26px;
+    cursor: pointer;
+}
+
+.gallery-track img:hover {
+    transform: translateY(-10px);
+}
+
+.gallery-track .big {
+    width: 500px;
+    height: 330px;
+}
+
+.gallery .arrow-left {
+    left: -50px;
+}
+
+.gallery .arrow-right {
+    right: -50px;
+}
+
+/* Блок 8: Форма обратной связи */
+.feedback {
+    padding: 90px 0;
+    background-color: #FAF6F0;
+    background: url('../image/патерн.png');
+    background-size: 650px;
+}
+
+.feedback-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feedback-left {
+    width: 420px;
+}
+
+.feedback-left h2 {
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 16px;
+}
+
+.feedback-left p {
+    font-size: 15px;
+    line-height: 22px;
+    color: #555555;
+}
+
+.feedback-right {
+    width: 560px;
+    background-color: white;
+    border-radius: 16px;
+    padding: 36px;
+}
+
+.feedback-right form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.field label {
+    font-size: 13px;
+    color: #555555;
+}
+
+.field input {
+    width: 100%;
+    height: 48px;
+    background-color: #FDF3D0;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    padding: 0 16px;
+    font-size: 15px;
+}
+
+.field input:focus {
+    outline: none;
+    background-color: white;
+    border: 1px solid #1E2738;
+}
+
+.check {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    color: #555555;
+    cursor: pointer;
+}
+
+.check a {
+    color: #1E2738;
+    text-decoration: underline;
+}
+
+.feedback-right .btn {
+    width: 100%;
+    height: 48px;
+}
+
+/* Блок 9: Подвал */
+footer {
+    background-color: #1E2738;
+    color: white;
+    padding: 60px 0 30px;
+}
+
+.footer-block {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+.footer-logo {
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.footer-logo .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer-logo p {
+    font-size: 13px;
+    line-height: 19px;
+    color: #B0B7C3;
+}
+
+.footer-img {
+    display: flex;
+    gap: 12px;
+}
+
+.footer-img img {
+    width: 32px;
+}
+
+.footer-img a:hover {
+    transform: translateY(-10px);
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-col h3 {
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+.footer-col a,
+.footer-col p {
+    font-size: 13px;
+    color: #B0B7C3;
+}
+
+.footer-col a:hover {
+    color: #F6BD00;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 12px;
+    color: #8892A0;
+}
